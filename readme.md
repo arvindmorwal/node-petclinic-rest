@@ -1,4 +1,4 @@
-pet-clinic-node-rest is the backend version of the petclinic application written with Node and Express.
+node-petclinic-rest is the backend version of the petclinic application written with Node and Express.
 This application only provides a REST API. 
 
 **There is no UI**.
@@ -11,7 +11,6 @@ This application provides crud operation for
 /vets
 
 ### Prerequisite
-- 
 - This application requires a local mongodb server running at localhost:27017
 - This application will run on port 5000 
   ( make sure its not already in use or change the port number from app.js)
@@ -37,15 +36,14 @@ npm start
 ```
 
 ### Data Prepopulation.
-Every time server is restarted, it will clear the old values in the database 'petclinic'
-and will prepopulate information of 'vets', 'pets', and 'visits' with some default values.
+On server start application will clear and prepopulate collections 'vets', 'pets', and 'visits' with default values.
 
 ### Notes
 - Exercise Difficulty: 
   > Moderate
 - How did you feel about the exercise itself? (1 lowest, 10 highest—awesome way to assess coding ability)
   > 10
-How do you feel about coding an exercise as a step in the interview process?  (1 lowest, 10 highest—awesome way to assess coding ability)
+- How do you feel about coding an exercise as a step in the interview process?  (1 lowest, 10 highest—awesome way to assess coding ability)
   > 10
-What would you change in the exercise and/or process?
+- What would you change in the exercise and/or process?
   > Some boilerplate code pre-created as a starter project.
