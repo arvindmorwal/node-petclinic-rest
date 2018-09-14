@@ -10,15 +10,42 @@ This application provides crud operation for
 /pets
 /vets
 
-This application requires a local mongodb server running at localhost:27017
+### Prerequisite
+- 
+- This application requires a local mongodb server running at localhost:27017
+- This application will run on port 5000 
+  ( make sure its not already in use or change the port number from app.js)
+- This application was test with node version v10.9.0
 
 
 ### Steps:
 1) In the command line
 ```
-git clone https://github.com/
+git clone https://github.com/arvindmorwal/node-petclinic-rest
 ```
-2) Inside Eclipse
+2) cd to node-petclinic-rest
 ```
-File -> Import -> Maven -> Existing Maven project
+cd node-petclinic-rest/ 
 ```
+3) install dependencies
+```
+npm install
+```
+4) start the server
+```
+npm start
+```
+
+### Data Prepopulation.
+Every time server is restarted, it will clear the old values in the database 'petclinic'
+and will prepopulate information of 'vets', 'pets', and 'visits' with some default values.
+
+### Notes
+- Exercise Difficulty: 
+  > Moderate
+- How did you feel about the exercise itself? (1 lowest, 10 highest—awesome way to assess coding ability)
+  > 10
+How do you feel about coding an exercise as a step in the interview process?  (1 lowest, 10 highest—awesome way to assess coding ability)
+  > 10
+What would you change in the exercise and/or process?
+  > Some boilerplate code pre-created as a starter project.
