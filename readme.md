@@ -3,7 +3,10 @@ This application only provides a REST API.
 
 **There is no UI**.
 
-Another application written in petclinic-react is a react-redux front-end application witch consumes these REST API.
+Another application written as `petclinic-react` is a react-redux front-end application witch consumes these REST API.
+
+UI application available here.
+https://github.com/arvindmorwal/react-petclinic
 
 This application provides crud operation for 
 /visits
@@ -14,7 +17,7 @@ This application provides crud operation for
 - This application requires a local mongodb server running at localhost:27017
 - This application will run on port 5000 
   ( make sure its not already in use or change the port number from app.js)
-- This application was test with node version v10.9.0
+- This application was tested with node version v10.9.0
 
 
 ### Steps:

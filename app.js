@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 // Load Models
 require('./models/Visit');
@@ -36,9 +37,10 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.use('/visits', visits);
-app.use('/vets', vets);
-app.use('/pets', pets);
+//TODO: remove the cors() for production.
+app.use('/visits', cors(), visits);
+app.use('/vets', cors(), vets);
+app.use('/pets', cors(),pets);
 
 const port = process.env.PORT || 5000;
 
